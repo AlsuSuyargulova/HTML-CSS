@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Приветствие</title>
+    <style>
+        html {
+            background-color: rgb(213, 140, 218);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Добро пожаловать!</h1>
+
+    <label for="nameInput">Введите ваше имя: </label>
+    <input type="text" id="nameInput">
+    <button onclick="displayGreeting()">Подтвердить</button>
+
+    <p id="greetingText"></p>
+
+    <script>
+        function displayGreeting() {
+            let name = document.getElementById("nameInput").value;
+            let greetingText = document.getElementById("greetingText");
+            greetingText.textContent = "Привет, " + name + "!";
+        }
+    </script>
+</body>
+
+</html>
